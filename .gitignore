@@ -1,0 +1,14 @@
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/cloud-api-commons/target/**
+/cloud-consumer-order80/target/**
+/cloud-eureka-server7001/target/**
+/cloud-eureka-server7002/target/**
+/cloud-provider-payment8001/target/**
+/cloud-provider-payment8002/target/**

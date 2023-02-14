@@ -1,0 +1,20 @@
+server:
+  port: 7002
+
+spring:
+  devtools:
+    add-properties: true
+
+eureka:
+  instance:
+    hostname: eureka7002.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  server:
+    #关闭自我保护机制，保证不可用的服务被删除,开发环境一般关闭，防止重启服务时调试错误，生产环境一般启用自我保护
+    enable-self-preservation: false
+    #让服务端每隔2秒扫描一次，是服务能尽快的剔除
+    eviction-interval-timer-in-ms: 2000
